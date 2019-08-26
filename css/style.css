@@ -7,9 +7,25 @@ h2 {
 #ware {
     font-family:Courier New;
 }
-#menu {
-    color:#1f2905;
-}
 figcaption {
     font-family:Franklin Gothic Medium;
+}
+.heading {
+    font-family:Courier New;
+    font-size: 25px;
+}
+.contacts {
+    font-sixe: 15px;
+}
+.reviews {
+    font-family:Franklin Gothic Medium;
+}
+li {
+    display: inline-block;
+}
+a {text-decoration: none;
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
 }
