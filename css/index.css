@@ -46,7 +46,20 @@ header nav .menu li a:hover{
         font-size: 13px;
     }
 }
+main .product img {
+    width: 100%;
+    display: block;
+}
 body {
     max-wigth: 980;
     margin: auto;
+}
+header {
+background-image: url(../img/sowa.jpg);
+background-position: right top;
+background-size: 300px;
+background-repeat: no-repeat;
+}
+body{
+    background-image: url(../img/fon.jpg)
 }
