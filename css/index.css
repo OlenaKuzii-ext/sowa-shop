@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Neucha&display=swap');
-header .home {
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Neucha&display=swap'); header .home {
     font-family: 'Comfortaa', cursive;
     font-size: 3rem;
     margin: 0;
 }
+
 header .home #ware {
     font-size: 2rem;
     font-family: 'Neucha', cursive;
@@ -12,6 +12,7 @@ header .home #ware {
 :root {
     --main-color: #5b7329;
     font-family: 'Neucha', cursive;
+    scroll-behavior: smooth;
 }
 
 header nav .menu {
@@ -20,6 +21,7 @@ header nav .menu {
     list-style-type: none;
     justify-content: space-around;
 }
+
 header nav .menu li a {
     text-decoration: none;
     color: var(--main-color);
@@ -28,61 +30,116 @@ header nav .menu li a {
     padding: 3px;
     font-size: 2rem;
 }
-header nav .menu li a:hover{
+
+header nav .menu li a:hover {
     border: 1px solid var(--main-color);
 }
-@media (max-width: 750px){
-    header nav .menu li a{
+
+@media (max-width: 750px) {
+    header nav .menu li a {
         font-size: 25px;
     }
 }
-@media (max-width: 600px){
-    header nav .menu li a{
+
+@media (max-width: 600px) {
+    header nav .menu li a {
         font-size: 18px;
     }
 }
-@media (max-width: 420px){
-    header nav .menu li a{
+
+@media (max-width: 420px) {
+    header nav .menu li a {
         font-size: 13px;
     }
 }
+
 main .product img {
     width: 100%;
     display: block;
 }
+
 body {
     max-wigth: 980;
     margin: auto;
 }
+
 header {
     background-image: url(../img/sowa.jpg);
     background-position: right top;
     background-size: 300px;
     background-repeat: no-repeat;
 }
-body{
-    background-image: url(../img/fon.jpg)
+
+body {
+    background-image: url(../img/fon.jpg);
 }
+
 @media (min-width: 600px) {
-   main .product-list {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-gap: 5px;
-   }
-}
-
-@media (min-width: 900px) {
     main .product-list {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
     }
 }
 
-@media (min-width: 980px) {
+@media (max-width: 600px) {
     main .product-list {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    main .product-list img {
+        width: 100px;
     }
 }
+
 header .search {
     display: flex;
     justify-content: space-between;
+    border: 7px solid transparent;
+    padding: 7px;
+}
+
+header .search a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+.product .sign {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+main .reviews p {
+    width: 100%;
+    display: block;
+}
+@media (min-width: 600px) {
+    main .reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    main .reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    main .reviews p {
+        width: 100px;
+    }
+}
+ .contacts {
+    display: flex;
+    justify-content: space-around;
+}
+main h3 {
+    font-size: 50px;
+    text-align: center;
 }
