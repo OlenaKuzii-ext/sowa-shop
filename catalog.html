@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/catalog.css">
+        <title>Sowa shop</title>
+    </head>
+    <body>
+        <header>
+            <div class="backet">
+            <div class="main-backet">
+                    <div id="head-backet">
+                            <button id="close-backet">X</button>
+                        </div>
+             <div id="cart_content"></div>
+             <p><button id="checkout">Оформити замовлення</button> &nbsp; <button id="clear_cart">Очистити корзину</button></p>
+            </div>
+        </div>
+                <div class="overlay">
+                        <form>
+                           <div class="con">
+                           <header class="head-form">
+                                <button id="close">X</button>
+                              <h2>Увійти</h2>
+                              <p>Введіть сюди свій емайл і пароль</p>
+                           </header>
+                           <br>
+                           <div class="field-set">
+                                 <input class="form-input" id="txt-input" type="text" placeholder="емайл" required>
+                              <br>
+                              <input class="form-input" type="password" placeholder="пароль" id="pwd"  name="password" required>
+                              <br>
+                              <button class="log-in"> Увійти </button>
+                           </div>
+                           <div class="other">
+                              <button class="btn submits frgt-pass">Забули пароль</button>
+                              <button class="btn submits sign-up">Зареєструватись
+                              <i class="fa fa-user-plus" aria-hidden="true"></i>
+                              </button>
+                           </div>
+                          </div>
+                        </form>
+                        </div>
+            <section class="home">
+                <h2>Sowa shop</h2>
+            </section>
+            <div class="cap">
+                <div class="main-page">
+                    <a href="index.html">
+                        <strong>Головна</strong>
+                    </a>
+                </div>
+                <div class="transfer">
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="Пошук">
+                            <button type="submit">Знайти</button>
+                        </form>
+                        <nav>
+                            <p class="fig" id="account">
+                                <img src="img/icons/icon-account.png" alt="Аккаунт-іконка">
+                                <a href="#">
+                                    <b>Ваш акаунт</b>
+                                </a>
+                            </p>
+                            <p class="fig" id="backet">
+                                <img src="img/icons/icon-backet.png" alt="Корзина-іконка">
+                                <a href="#">
+                                    <b>Корзина</b>
+                                </a>
+                            </p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-catalog">
+                <div class="category">
+                    <h3>Каталог</h3>
+                    <ul>
+                        <li>
+                            <a href="#" id="bags">Сумки </a>
+                        </li>
+                        <li>
+                            <a href="#" id="backpack">Рюкзаки</a>
+                        </li>
+                        <li>
+                            <a href="#" id="bananas">Бананки</a>
+                        </li>
+                        <li>
+                            <a href="#" id="bags-belt">Сумки на пояс</a>
+                        </li>
+                        <li>
+                            <a href="#" id="glasses">Окуляри</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-bananas">
+                        <div class="product">
+                                <h4 class="title">Бананка прозора, чорна</h4>
+                                <img src="img/bananas/clear-banana.jpg" alt="бананка-прозора">
+                                        <p><span class="price">500</span>грн</p>
+                                        <button class="buy" data-id="clear-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                <h4 class="title">Бананка прозора, блакитна</h4>
+                                <img src="img/bananas/clear-blue-banana.jpg" alt="бананка прозора, блакитна">
+                                        <p><span class="price">500</span>грн</p>
+                                        <button class="buy" data-id="clear-blue-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                <h4 class="title">Бананка прозора, рожева</h4>
+                                <img src="img/bananas/clear-pink-banana.jpg" alt="бананка прозора, рожева">
+                                        <p><span class="price">500</span>грн</p>
+                                        <button class="buy" data-id="clear-pink-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                    <h4 class="title">Бананка сіра</h4>
+                                    <img src="img/bananas/grey-banana.jpg" alt="бананка сіра">
+                                            <p><span class="price">500</span>грн</p>
+                                            <button class="buy" data-id="grey-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                    <h4 class="title">Бананка чорна</h4>
+                                    <img src="img/bananas/black-banana.jpg" alt="бананка чорна">
+                                            <p><span class="price">500</span>грн</p>
+                                            <button class="buy" data-id="black-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                    <h4 class="title">Бананка коричнева</h4>
+                                    <img src="img/bananas/brown-banana.jpg" alt="бананка коричнева">
+                                            <p><span class="price">500</span>грн</p>
+                                            <button class="buy" data-id="brown-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                    <h4 class="title">Бананка чорна із зміїної шкіри</h4>
+                                    <img src="img/bananas/snake-black-banana.jpg" alt="Бананка чорна із зміїної шкіри">
+                                            <p><span class="price">500</span>грн</p>
+                                            <button class="buy" data-id="snake-black-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                    <h4 class="title">Бананка червона із зміїної шкіри</h4>
+                                    <img src="img/bananas/snake-red-banana.jpg" alt="Бананка червона із зміїної шкіри">
+                                            <p><span class="price">500</span>грн</p>
+                                            <button class="buy" data-id="snake-red-banana">Купити</button>
+                            </div>
+                            <div class="product">
+                                    <h4 class="title">Бананка сіра із зміїної шкіри</h4>
+                                    <img src="img/bananas/snake-gray-banana.jpg" alt="Бананка сіра із зміїної шкіри">
+                                            <p><span class="price">500</span>грн</p>
+                                            <button class="buy" data-id="snake-gray-banana">Купити</button>
+                            </div>
+                            </div>
+
+
+<!--  РЮКЗАКИ ДЛЯ КАТАЛОГУ!!!
+
+
+                    <div class="container">
+                        <article class="product">
+                            <img src="img/backpacks/backpack-pink-clear.jpg" alt="рюкзак рожевий, прозорий">
+                            <div class="sign">
+                                <p>
+                                    Рожевий, прозорий
+                                        220<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-beige-clear.jpg" alt="рюкзак бежевий, прозорий">
+                            <div class="sign">
+                                <p>
+                                    Бежевий, прозорий
+                                        300<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-black-clear.jpg" alt="рюкзак чорний, прозорий">
+                            <div class="sign">
+                                <p>
+                                    Чорний, прозорий
+                                        400<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-green.jpg" alt="Зелений рюкзак">
+                            <div class="sign">
+                                <p>
+                                    Зелений
+                                        499<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-red.jpg" alt="Червоний рюкзак">
+                            <div class="sign">
+                                <p>
+                                    Червоний
+                                        499<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-black.jpg" alt="Чорний рюкзак">
+                            <div class="sign">
+                                <p>
+                                    Чорний
+                                        500<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-green-bee.jpg" alt="Зелений з бджілкою рюкзак">
+                            <div class="sign">
+                                <p>
+                                    Зелений з бджілкою
+                                                        500<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-red-bee.jpg" alt="Червоний з бджілкою рюкзак">
+                            <div class="sign">
+                                <p>
+                                    Червоний з бджілкою
+                                                    500<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        </article>
+                        <article class="product">
+                            <img src="img/backpacks/backpack-black-bee.jpg" alt="Чорний з бджілкою рюкзак">
+                            <div class="sign">
+                                <p>
+                                    Чорний з бджілкою
+                                                500<sub>грн</sub>
+                                </p>
+                                <button class="buy">Купити</button>
+                            </div>
+                        </article>
+                        </div></div></div> -->
+
+<!-- ОКУЛЯРИ ДЛЯ КАТАЛОГУ!!!
+    <div class="container">
+                            <article class="product">
+                                <img src="img/glasses/glasses-clear.jpg" alt="Прозорі окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Прозорі
+                                            220<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-pink.jpg" alt="Рожеві окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Рожеві
+                                            300<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-blue.jpg" alt="Блакитні окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Блакитні
+                                            400<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-half-pink.jpg" alt="Верхня оправа, рожева, окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Верхня оправа, рожева
+                                            499<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-half-gold.jpg" alt="Верхня оправа, золотий колір, окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Верхня оправа, золотий колір
+                                            499<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-half-black.jpg" alt="Верхня оправа, чорна, окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Верхня оправа, чорна
+                                            500<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-circle.jpg" alt="Круглі окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Круглі
+                                                            500<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-tiny-black.jpg" alt="Чорна оправа, тонка, окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Чорна оправа, тонка
+                                                        500<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            </article>
+                            <article class="product">
+                                <img src="img/glasses/glasses-black.jpg" alt="Чорна оправа, окуляри">
+                                <div class="sign">
+                                    <p>
+                                        Чорна оправа
+                                                    500<sub>грн</sub>
+                                    </p>
+                                    <button class="buy">Купити</button>
+                                </div>
+                            </article>
+                            </div></div></div> -->
+
+<!-- СУМКИ ДЛЯ КАТАЛОГУ!!!
+                                <div class="container-bags">
+                                <article class="product">
+                                    <img src="img/bags/bag-white.jpg" alt="Рожева сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Рожева
+                                                220<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-blue.jpg" alt="Блакитна сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Блакитна
+                                                300<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-pink.jpg" alt="Рожева сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Рожева
+                                                400<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-clear-black.jpg" alt="Чорна сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Чорна
+                                                499<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-clear-red.jpg" alt="Червона сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Червона
+                                                499<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-clear-pink.jpg" alt="Рожева сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Рожева
+                                                500<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-big-beige.jpg" alt="Бежева сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Бежева
+                                                                500<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-big-black.jpg" alt="Чорна сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Чорна
+                                                            500<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                </article>
+                                <article class="product">
+                                    <img src="img/bags/bag-big-pink.jpg" alt="Рожева сумка">
+                                    <div class="sign">
+                                        <p>
+                                            Рожева
+                                                        500<sub>грн</sub>
+                                        </p>
+                                        <button class="buy">Купити</button>
+                                    </div>
+                                </article>
+                                </div></div></div> -->
+
+<!-- СУМКИ НА ПОЯС!!!
+                                    <div class="container">
+                                    <article class="product">
+                                        <img src="img/bags-belt/white-bags-belt.jpg" alt="Біла сумка">
+                                        <div class="sign">
+                                            <p>
+                                                Біла
+                                                    220<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/pink-bag-belt.jpg" alt="Рожева сумка">
+                                        <div class="sign">
+                                            <p>
+                                                Рожева
+                                                    300<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/gray-bag-belt.jpg" alt="Сіра сумка">
+                                        <div class="sign">
+                                            <p>
+                                                Сіра
+                                                    400<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/blue-circle-bags-belt.jpg" alt="Синя з металевим кільцем сумка">
+                                        <div class="sign">
+                                            <p>
+                                                Синя з металевим кільцем
+                                                    499<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/red-circle-bags-belt.jpg" alt="Червона з металевим кільцем сумка">
+                                        <div class="sign">
+                                            <p>
+                                                Червона з металевим кільцем
+                                                    499<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/black-circle-bags-belt.jpg" alt="Чорна з металевим кільцем сумка">
+                                        <div class="sign">
+                                            <p>
+                                                Чорна з металевим кільцем
+                                                    500<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/small-snake-black-bag-belt.jpg" alt="Зміїна шкіра, чорна ">
+                                        <div class="sign">
+                                            <p>
+                                                Зміїна шкіра, чорна
+                                                                    500<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/small-snake-white-bag-belt.jpg" alt="Зміїна шкіра, біла сумка">
+                                        <div class="sign">
+                                            <p>
+                                                Зміїна шкіра, біла
+                                                                500<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    </article>
+                                    <article class="product">
+                                        <img src="img/bags-belt/small-black-bag-belt.jpg" alt="Чорна сумка на пояс">
+                                        <div class="sign">
+                                            <p>
+                                                Чорна
+                                                            500<sub>грн</sub>
+                                            </p>
+                                            <button class="buy">Купити</button>
+                                        </div>
+                                    </article>
+                                    </div></div></div> -->
+                        </main>
+
+<footer>
+    <div class="contacts">
+        <h3>Контакти:</h3>
+        <p class="fig">
+            <a href="https://instagram.com/sowa_shopp">
+                <img src="img/icons/icon-instagram.png" alt="Інстаграм-іконка">
+            </a>
+            <a href="https://instagram.com/sowa_shopp">@sowashopp</a>
+        </p>
+        <p class="fig">
+            <a href="https://facebook.com/sowashopp">
+                <img src="img/icons/icon-facebook.png" alt="Фейсбук-іконка">
+            </a>
+            <a href="https://facebook.com/sowashopp">Sowa_shopp</a>
+        </p>
+        <p class="fig">
+            <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380977749829
+        </p>
+        <p class="fig">
+            <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380662378740
+        </p>
+    </div>
+    <div class="collaboration">
+        <h3>Співпраця:</h3>
+        <p class="fig">
+            <a href="https://instagram.com/akuziy">
+                <img src="img/icons/icon-instagram.png" alt="Інстаграм-іконка">
+            </a>
+            <a href="https://instagram.com/akuziy">@akuziy</a>
+        </p>
+        <p class="fig">
+            <a href="Sowa.shopp@gmail.com">
+                <img src="img/icons/icon-mail.png" alt="Інстаграм-іконка">
+            </a>
+            <a href="Sowa.shopp@gmail.com">Sowa.shopp@gmail.com</a>
+        </p>
+        <p class="fig">
+            <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380662378740
+        </p>
+    </div>
+</footer>
+<script src="js/index.js"></script>
+</body></html>

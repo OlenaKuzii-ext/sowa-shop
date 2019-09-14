@@ -9,7 +9,46 @@
     </head>
     <body>
         <header>
+            <div class="backet">
+                <div class="main-backet">
+                    <div id="head-backet">
+                        <button id="close-backet">X</button>
+                    </div>
+                    <div id="cart_content"></div>
+                    <p>
+                        <button id="checkout">Оформити замовлення</button>
+                        &nbsp;<button id="clear_cart">Очистити корзину</button>
+                    </p>
+                </div>
+            </div>
+            <div class="overlay">
+                <form>
+                    <div class="con">
+                        <header class="head-form">
+                            <button id="close">X</button>
+                            <h2>Увійти</h2>
+                            <p>Введіть сюди свій емайл і пароль</p>
+                        </header>
+                        <br>
+                        <div class="field-set">
+                            <input class="form-input" id="txt-input" type="text" placeholder="емайл" required>
+                            <br>
+                            <input class="form-input" type="password" placeholder="пароль" id="pwd" name="password" required>
+                            <br>
+                            <button class="log-in">Увійти </button>
+                        </div>
+                        <div class="other">
+                            <button class="btn submits frgt-pass">Забули пароль</button>
+                            <button class="btn submits sign-up">
+                                Зареєструватись
+                              <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <section class="home">
+                <img id="sowa" src="img/sowa.jpg" alt="Сова">
                 <h1>Sowa</h1>
                 <p id="ware">
                     сумки, бананки, рюкзаки,<br>окуляри, сумки на пояс
@@ -25,12 +64,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="catalog.html">
                             <strong>Каталог</strong>
                         </a>
                     </li>
                     <li>
-                        <a href="#new">
+                        <a href="#news">
                             <strong>Новинки</strong>
                         </a>
                     </li>
@@ -52,165 +91,236 @@
                 </ul>
             </nav>
             <div class="search">
-                <form>
-                    <p>
-                        <input type="search" name="search" placeholder="Пошук">
-                        <input type="submit" value="Знайти">
-                    </p>
+                <form id="header-search">
+                    <input type="text" placeholder="Пошук">
+                    <button type="submit">Знайти</button>
                 </form>
                 <nav>
-                    <a href="">
-                        <b>Ваш акаунт</b>
-                    </a>
-                    <a href="">
-                        <b>Корзина</b>
-                    </a>
+                    <p class="fig" id="account">
+                        <img src="img/icons/icon-account.png" alt="Аккаунт-іконка">
+                        <a href="#">
+                            <b>Ваш акаунт</b>
+                        </a>
+                    </p>
+                    <p class="fig" >
+                        <img src="img/icons/icon-backet.png" alt="Корзина-іконка">
+                        <a href="#" id="backet">
+                            <b>Корзина</b>
+                        </a>
+                    </p>
                 </nav>
             </div>
         </header>
         <main>
-
-
             <div class="content">
-<div class="one">
-    <img src="img/white-blue-backpack.jpg" alt="рюкзак - білий з бликитним" style="position: relative; width:200px; height:100px;">
-    <img src="img/white-banana.jpg" alt="бананка - біла" style="position: relative; width:200px; height:300px;">
-</div>
-<div class="one">
-    <img src="img/black-green-backpack-sideway.jpg" alt="рюкзак - чорний з зеленим, фото збоку" style="position: relative; width:200px; height:50px;">
-    <img src="img/pink-pearl-dark-banana.jpg" alt="бананка - рожева, перламутрова, темна" style="position: relative; width:200px; height:200px;">
-    <img src="img/pink-pearl-clear-banana.jpg" alt="бананка - рожева, перламутрова, прозора" style="position: relative; width:200px; height:100px;">
-</div>
-
-<div class="one">
-    <img src="img/beige-backpack.jpg" alt="рюкзак - бежевий" style="position: relative; width:200px; height:300px;">
-    <img src="img/brown-glasses.jpg" alt="окуляри - коричневі" style="position: relative; width:200px; height:250px;">
-</div>
+                <div class="content-img">
+                    <div class="content-img-blue-backpack">
+                        <img src="img/white-blue-backpack.jpg" alt="рюкзак - білий з бликитним">
+                        <p>
+                            <span>Рюкзаки</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="content-img-beige-backpack">
+                        <img src="img/beige-backpack.jpg" alt="рюкзак - бежевий">
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="content-img-green-backpack">
+                        <img src="img/black-green-backpack-sideway.jpg" alt="рюкзак - чорний з зеленим, фото збоку">
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="content-img-dark-banana">
+                        <img id="four" src="img/pink-pearl-dark-banana.jpg" alt="бананка - рожева, перламутрова, темна">
+                        <p>
+                            <span>Бананки</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-img"></div>
+                <div class="content-img">
+                    <div class="content-img-clear-banana">
+                        <img src="img/pink-pearl-clear-banana.jpg" alt="бананка - рожева, перламутрова, прозора">
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="content-img-white-banana">
+                        <img src="img/white-banana.jpg" alt="бананка - біла">
+                        <p>
+                            <span>Сумки_на_пояс</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="content-img-glasses">
+                        <img src="img/brown-glasses.jpg" alt="окуляри - коричневі">
+                        <p>
+                            <span>Окуляри</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="bag-pearl">
+                        <img src="img/bag-pearl-pink.jpg" alt="сумка перламутрова, рожева">
+                    </div>
+                </div>
             </div>
-
-            <h3>Новинки</h3>
+            <h3 id="news">Новинки</h3>
             <div class="product-list">
-                <article class="product">
-                    <h5>Сумки на пояс</h5>
-                    <img src="img/img-new/pink-banana.jpg" alt="бананка - рожева">
-                    <div class="sign">
-                        <p>
-                            220<sub>грн</sub>
-                        </p>
-                        <button class="buy">Купити</button>
+                    <div class="product">
+                            <h4 class="title">Бананка рожева</h4>
+                            <img src="img/img-new/pink-banana.jpg" alt="бананка рожева">
+                                    <p><span class="price">500</span>грн</p>
+                                    <button class="buy" data-id="pink-banana-new">Купити</button>
                     </div>
-                </article>
-                <article class="product">
-                    <h5>Бананки</h5>
-                    <img src="img/img-new/flamingo-banana.jpg" alt="бананка з фламінго">
-                    <div class="sign">
-                        <p>
-                            300<sub>грн</sub>
-                        </p>
-                        <button class="buy">Купити</button>
+                    <div class="product">
+                            <h4 class="title">Бананка з фламінго</h4>
+                            <img src="img/img-new/flamingo-banana.jpg" alt="бананка з фламінго">
+                                    <p><span class="price">500</span>грн</p>
+                                    <button class="buy" data-id="flamingo-banana-new">Купити</button>
                     </div>
-                </article>
-                <article class="product">
-                    <h5>Рюкзаки</h5>
-                    <img src="img/img-new/black-backpack.jpg" alt="чорний рюкзак">
-                    <div class="sign">
-                        <p>
-                            400<sub>грн</sub>
-                        </p>
-                        <button class="buy">Купити</button>
+                    <div class="product">
+                            <h4 class="title">Рюкзак чорний</h4>
+                            <img src="img/img-new/black-backpack.jpg" alt="Рюкзак чорний">
+                                    <p><span class="price">500</span>грн</p>
+                                    <button class="buy" data-id="black-backpack-new">Купити</button>
                     </div>
-                </article>
             </div>
-                <h3>Акції</h3>
-                <div class="product-list">
-                <article class="product">
-                    <h5>Рюкзаки</h5>
-                    <img src="img/img-prom/backpacks-bright.jpg" alt="рюкзаки світлі">
-                    <div class="sign">
-                        <p>
-                            <s>
-                                700<sub>грн</sub>
-                            </s>
-                            499<sub>грн</sub>
-                        </p>
-                        <button class="buy">Купити</button>
+            <h3 id="promotions">Акції</h3>
+            <div class="product-list">
+                    <div class="product">
+                            <h4 class="title">Рюкзаки нюдові</h4>
+                            <img src="img/img-prom/backpacks-bright.jpg" alt="Рюкзаки нюдові">
+                                    <p> <s>
+                                            700<sub>грн</sub>
+                                        </s>
+                                        <span class="price">499</span>грн</p>
+                                    <button class="buy" data-id="backpacks-bright-prom">Купити</button>
                     </div>
-                </article>
-                <article class="product">
-                    <h5>Рюкзаки</h5>
-                    <img src="img/img-prom/black-backpack.jpg" alt="рюкзаки темні">
-                    <div class="sign">
-                        <p>
-                            <s>
-                                750<sub>грн</sub>
-                            </s>
-                            499<sub>грн</sub>
-                        </p>
-                        <button class="buy">Купити</button>
+                    <div class="product">
+                            <h4 class="title">Рюкзак чорний</h4>
+                            <img src="img/img-prom/black-backpack.jpg" alt="Рюкзак чорний">
+                                    <p> <s>
+                                            700<sub>грн</sub>
+                                        </s>
+                                        <span class="price">499</span>грн</p>
+                                    <button class="buy" data-id="black-backpack-prom">Купити</button>
                     </div>
-                </article>
-                <article class="product">
-                    <h5>Сумки</h5>
-                    <img src="img/img-prom/bag-pearl-pink.jpg" alt="сумка - рожева перламутрова">
-                    <div class="sign">
-                        <p>
-                            <s>
-                                700<sub>грн</sub>
-                            </s>
-                            500<sub>грн</sub>
-                        </p>
-                        <button class="buy">Купити</button>
+                    <div class="product">
+                            <h4 class="title"> Сумка - рожевий перламутр</h4>
+                            <img src="img/img-prom/bag-pearl-pink.jpg" alt=" Сумка - рожевий перламутр">
+                                    <p> <s>
+                                            700<sub>грн</sub>
+                                        </s>
+                                        <span class="price">499</span>грн</p>
+                                    <button class="buy" data-id="bag-pearl-pink-prom">Купити</button>
                     </div>
-                </article>
             </div>
-            <br>
-            <h3>Відгуки</h3>
+            <h3 id="reviews">Відгуки</h3>
             <div class="reviews">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="fig">
+                    <img src="img/icons/icon-boy.png" alt="Хлопець-іконка">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-girl.png" alt="Дівчина-іконка">
+                    <img src="img/icons/icon-photo.png" alt="Фото-іконка" width="30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-boy.png" alt="Хлопець-іконка">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-boy.png" alt="Хлопець-іконка">
+                    <img src="img/icons/icon-photo.png" alt="Фото-іконка" width="30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-girl.png" alt="Дівчина-іконка">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-girl.png" alt="Дівчина-іконка">
+                    <img src="img/icons/icon-photo.png" alt="Фото-іконка" width="30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                </p>
             </div>
         </main>
         <footer>
-            <form>
-                <fieldset>
-                    <legend>Маєте запитання?</legend>
-                    <label>
-                        Ім'я<em>*</em>
-                        <input type="text" name="name">
-                    </label>
-                    <label>
-                        E-mail<em>*</em>
-                        <input type="email" name="email">
-                    </label>
-                    <label>
-                        Повідомлення<textarea></textarea>
-                    </label>
-                </fieldset>
-                <p>
-                    <input type="submit" value="Отправить">
-                </p>
-            </form>
-            <h4>Контакти</h4>
+                <form action="" class="air">
+                        <div class="form-inner">
+                          <div class="stripes-block"></div>
+                          <div class="form-row">
+                            <label for="name">Ім'я</label>
+                            <input type="text" id="name" required>
+                          </div>
+                          <div class="form-row">
+                            <label for="address">Повідомлення</label>
+                            <textarea rows="3" id="address" required></textarea>
+                          </div>
+                          <div class="form-row-icon">
+                            <i class="fa fa-tty">Телефон</i>
+                            <input type="text" id="phone" required>
+                          </div>
+                          <div class="form-row-icon">
+                            <i class="fa fa-envelope-o">Емайл</i>
+                            <input type="email" id="email" required>
+                          </div>
+                          <div class="form-row-icon">
+                            <i class="fa fa-paper-plane-o">Відправити</i>
+                            <input type="submit" value="">
+                          </div>
+                        </div>
+                      </form>
             <div class="contacts">
-            <a href="https://instagram.com/sowa_shopp"></a>
-            <a href="https://instagram.com/sowa_shopp">@sowashopp</a>
-            <a href="https://facebook.com/sowashopp"></a>
-            <a href="https://facebook.com/sowashopp">Sowa_shopp</a>
-            +380977749829
- 		+380662378740
+                <p class="fig">
+                <h4 id="contacts">Контакти</h4>
+                <p class="fig">
+                    <a href="https://instagram.com/sowa_shopp">
+                        <img src="img/icons/icon-instagram.png" alt="Інстаграм-іконка">
+                    </a>
+                    <a href="https://instagram.com/sowa_shopp">@sowashopp</a>
+                </p>
+                <p class="fig">
+                    <a href="https://facebook.com/sowashopp">
+                        <img src="img/icons/icon-facebook.png" alt="Фейсбук-іконка">
+                    </a>
+                    <a href="https://facebook.com/sowashopp">Sowa_shopp</a>
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380977749829
+
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380662378740
+
+                </p>
             </div>
-          <h4>Співпраця</h4>
-          <div class="collaboration">
-            <a href="https://instagram.com/akuziy"></a>
-            <a href="https://instagram.com/akuziy">@akuziy</a>
-            <a href="Sowa.shopp@gmail.com"></a>
-            <a href="Sowa.shopp@gmail.com">Sowa.shopp@gmail.com</a>
-            +380662378740
-          </div>
+            <div class="collaboration">
+                <p class="fig">
+                <h4>Співпраця</h4>
+                <p class="fig">
+                <p class="fig">
+                    <a href="https://instagram.com/akuziy">
+                        <img src="img/icons/icon-instagram.png" alt="Інстаграм-іконка">
+                    </a>
+                    <a href="https://instagram.com/akuziy">@akuziy</a>
+                </p>
+                <p class="fig">
+                    <a href="Sowa.shopp@gmail.com">
+                        <img src="img/icons/icon-mail.png" alt="Інстаграм-іконка">
+                    </a>
+                    <a href="Sowa.shopp@gmail.com">Sowa.shopp@gmail.com</a>
+                </p>
+                <p class="fig">
+                    <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380662378740
+
+                </p>
+            </div>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
