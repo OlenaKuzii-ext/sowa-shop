@@ -1,48 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="css/catalog.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="css/catalog.css">
         <title>Sowa shop</title>
     </head>
+
     <body>
         <header>
-            <div class="backet">
-            <div class="main-backet">
-                    <div id="head-backet">
-                            <button id="close-backet">X</button>
-                        </div>
-             <div id="cart_content"></div>
-             <p><button id="checkout">Оформити замовлення</button> &nbsp; <button id="clear_cart">Очистити корзину</button></p>
-            </div>
-        </div>
-                <div class="overlay">
-                        <form>
-                           <div class="con">
-                           <header class="head-form">
-                                <button id="close">X</button>
-                              <h2>Увійти</h2>
-                              <p>Введіть сюди свій емайл і пароль</p>
-                           </header>
-                           <br>
-                           <div class="field-set">
-                                 <input class="form-input" id="txt-input" type="text" placeholder="емайл" required>
-                              <br>
-                              <input class="form-input" type="password" placeholder="пароль" id="pwd"  name="password" required>
-                              <br>
-                              <button class="log-in"> Увійти </button>
-                           </div>
-                           <div class="other">
-                              <button class="btn submits frgt-pass">Забули пароль</button>
-                              <button class="btn submits sign-up">Зареєструватись
-                              <i class="fa fa-user-plus" aria-hidden="true"></i>
-                              </button>
-                           </div>
-                          </div>
-                        </form>
-                        </div>
+
             <section class="home">
                 <h2>Sowa shop</h2>
             </section>
@@ -65,19 +34,18 @@
                                     <b>Ваш акаунт</b>
                                 </a>
                             </p>
-                            <p class="fig" id="backet">
-                                <img src="img/icons/icon-backet.png" alt="Корзина-іконка">
-                                <a href="#">
-                                    <b>Корзина</b>
-                                </a>
+                            <p class="fig" id="basket">
+                                    <div class="container" id="home">
+                                            <div>
+                                                <a class="nav-link" href="#cartModal" data-toggle="modal">
+                                                  <img src="img/icons/icon-basket.png" alt="Корзина-іконка">Корзина<span id="cart-badge" class="badge badge-light"></span>
+                                                </a>
+                                            </div>
                             </p>
                         </nav>
-                    </div>
-                </div>
-            </div>
         </header>
         <main>
-            <div class="main-catalog">
+            <div class="catalog">
                 <div class="category">
                     <h3>Каталог</h3>
                     <ul>
@@ -98,62 +66,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container-bananas">
-                        <div class="product">
-                                <h4 class="title">Бананка прозора, чорна</h4>
-                                <img src="img/bananas/clear-banana.jpg" alt="бананка-прозора">
-                                        <p><span class="price">500</span>грн</p>
-                                        <button class="buy" data-id="clear-banana">Купити</button>
+                        <section>
+                            <div class="row products-container">
+                               <!--Products are dynamically generated here-->
                             </div>
-                            <div class="product">
-                                <h4 class="title">Бананка прозора, блакитна</h4>
-                                <img src="img/bananas/clear-blue-banana.jpg" alt="бананка прозора, блакитна">
-                                        <p><span class="price">500</span>грн</p>
-                                        <button class="buy" data-id="clear-blue-banana">Купити</button>
-                            </div>
-                            <div class="product">
-                                <h4 class="title">Бананка прозора, рожева</h4>
-                                <img src="img/bananas/clear-pink-banana.jpg" alt="бананка прозора, рожева">
-                                        <p><span class="price">500</span>грн</p>
-                                        <button class="buy" data-id="clear-pink-banana">Купити</button>
-                            </div>
-                            <div class="product">
-                                    <h4 class="title">Бананка сіра</h4>
-                                    <img src="img/bananas/grey-banana.jpg" alt="бананка сіра">
-                                            <p><span class="price">500</span>грн</p>
-                                            <button class="buy" data-id="grey-banana">Купити</button>
-                            </div>
-                            <div class="product">
-                                    <h4 class="title">Бананка чорна</h4>
-                                    <img src="img/bananas/black-banana.jpg" alt="бананка чорна">
-                                            <p><span class="price">500</span>грн</p>
-                                            <button class="buy" data-id="black-banana">Купити</button>
-                            </div>
-                            <div class="product">
-                                    <h4 class="title">Бананка коричнева</h4>
-                                    <img src="img/bananas/brown-banana.jpg" alt="бананка коричнева">
-                                            <p><span class="price">500</span>грн</p>
-                                            <button class="buy" data-id="brown-banana">Купити</button>
-                            </div>
-                            <div class="product">
-                                    <h4 class="title">Бананка чорна із зміїної шкіри</h4>
-                                    <img src="img/bananas/snake-black-banana.jpg" alt="Бананка чорна із зміїної шкіри">
-                                            <p><span class="price">500</span>грн</p>
-                                            <button class="buy" data-id="snake-black-banana">Купити</button>
-                            </div>
-                            <div class="product">
-                                    <h4 class="title">Бананка червона із зміїної шкіри</h4>
-                                    <img src="img/bananas/snake-red-banana.jpg" alt="Бананка червона із зміїної шкіри">
-                                            <p><span class="price">500</span>грн</p>
-                                            <button class="buy" data-id="snake-red-banana">Купити</button>
-                            </div>
-                            <div class="product">
-                                    <h4 class="title">Бананка сіра із зміїної шкіри</h4>
-                                    <img src="img/bananas/snake-gray-banana.jpg" alt="Бананка сіра із зміїної шкіри">
-                                            <p><span class="price">500</span>грн</p>
-                                            <button class="buy" data-id="snake-gray-banana">Купити</button>
-                            </div>
-                            </div>
+                        </section>
+                    </div>
+                    </main>
+
 
 
 <!--  РЮКЗАКИ ДЛЯ КАТАЛОГУ!!!
@@ -545,7 +465,7 @@
                                         </div>
                                     </article>
                                     </div></div></div> -->
-                        </main>
+
 
 <footer>
     <div class="contacts">
@@ -588,5 +508,85 @@
         </p>
     </div>
 </footer>
-<script src="js/index.js"></script>
+
+
+
+
+
+
+
+    <!-- Modal Cart -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="cartLabel">Корзина</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="cart-product-list-container"></div>
+                  <hr>
+                  <div class="container">
+                    <form>
+                      <div class="form-group row">
+                        <label for="client-name" class="col-4 col-form-label">Ім'я:</label>
+                        <input class="form-control col-8" type="text" id="client-name" required>
+                      </div>
+                      <div class="form-group row">
+                        <label for="client-email" class="col-4 col-form-label">Емайл:</label>
+                        <input class="form-control col-8" type="email" id="client-email" required>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                  <button class="btn btn-primary order">Замовити</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+            <div class="overlay">
+                    <form>
+                       <div class="con">
+                       <header class="head-form">
+                            <button id="close">X</button>
+                          <h2>Увійти</h2>
+                          <p>Введіть сюди свій емайл і пароль</p>
+                       </header>
+                       <br>
+                       <div class="field-set">
+                             <input class="form-input" id="txt-input" type="text" placeholder="емайл" required>
+                          <br>
+                          <input class="form-input" type="password" placeholder="пароль" id="pwd"  name="password" required>
+                          <br>
+                          <button class="log-in"> Увійти </button>
+                       </div>
+                       <div class="other">
+                          <button class="btn submits frgt-pass">Забули пароль</button>
+                          <button class="btn submits sign-up">Зареєструватись
+                          <i class="fa fa-user-plus" aria-hidden="true"></i>
+                          </button>
+                       </div>
+                      </div>
+                    </form>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+                    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+                    <script defer src="js/cart.js"></script>
+                    <script defer src="js/product-list.js"></script>
+                    <script defer src="js/alert-window.js"></script>
+                    <script defer src="js/index.js"></script>
 </body></html>

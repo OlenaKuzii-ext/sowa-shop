@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "title": "Бананка прозора, чорна",
+        "image": "clear-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "2",
+        "title": "Бананка прозора, блакитна",
+        "image": "clear-blue-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "3",
+        "title": "Бананка прозора, рожева",
+        "image": "clear-pink-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "4",
+        "title": "Бананка сіра",
+        "image": "grey-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "5",
+        "title": "Бананка чорна",
+        "image": "black-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "6",
+        "title": "Бананка коричнева",
+        "image": "brown-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "7",
+        "title": "Бананка чорна із зміїної шкіри",
+        "image": "snake-black-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "8",
+        "title": "Бананка червона із зміїної шкіри",
+        "image": "snake-red-banana.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "9",
+        "title": "Бананка сіра із зміїної шкіри",
+        "image": "snake-gray-banana.jpg",
+        "price": 499.99
+    }
+]
