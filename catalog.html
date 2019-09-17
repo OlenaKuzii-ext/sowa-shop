@@ -5,13 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-         <link rel="stylesheet" type="text/css" href="css/catalog.css">
+        <link rel="stylesheet" type="text/css" href="css/catalog.css">
         <title>Sowa shop</title>
     </head>
-
     <body>
         <header>
-
             <section class="home">
                 <h2>Sowa shop</h2>
             </section>
@@ -31,51 +29,47 @@
                             <p class="fig" id="account">
                                 <img src="img/icons/icon-account.png" alt="Аккаунт-іконка">
                                 <a href="#">
-                                    <b>Ваш акаунт</b>
+                                    <button type="button" data-toggle="modal" data-target="#myModal">
+                                        <b>Ваш акаунт</b>
+                                    </button>
                                 </a>
                             </p>
                             <p class="fig" id="basket">
-                                    <div class="container" id="home">
-                                            <div>
-                                                <a class="nav-link" href="#cartModal" data-toggle="modal">
-                                                  <img src="img/icons/icon-basket.png" alt="Корзина-іконка">Корзина<span id="cart-badge" class="badge badge-light"></span>
-                                                </a>
-                                            </div>
-                            </p>
-                        </nav>
-        </header>
-        <main>
-            <div class="catalog">
-                <div class="category">
-                    <h3>Каталог</h3>
-                    <ul>
-                        <li>
-                            <a href="#" id="bags">Сумки </a>
-                        </li>
-                        <li>
-                            <a href="#" id="backpack">Рюкзаки</a>
-                        </li>
-                        <li>
-                            <a href="#" id="bananas">Бананки</a>
-                        </li>
-                        <li>
-                            <a href="#" id="bags-belt">Сумки на пояс</a>
-                        </li>
-                        <li>
-                            <a href="#" id="glasses">Окуляри</a>
-                        </li>
-                    </ul>
-                </div>
-                        <section>
-                            <div class="row products-container">
-                               <!--Products are dynamically generated here-->
-                            </div>
-                        </section>
-                    </div>
-                    </main>
-
-
-
+                            <div class="container" id="home">
+                                <div>
+                                    <a class="nav-link" href="#cartModal" data-toggle="modal">
+                                        <img src="img/icons/icon-basket.png" alt="Корзина-іконка">
+                                        Корзина<span id="cart-badge" class="badge badge-light"></span>
+                                    </a>
+                                </div>
+</p></nav></div></header>
+<main>
+    <div class="catalog container">
+        <div class="category">
+            <h3>Каталог</h3>
+            <ul>
+                <li>
+                    <a href="#" id="bags">Сумки </a>
+                </li>
+                <li>
+                    <a href="#" id="backpack">Рюкзаки</a>
+                </li>
+                <li>
+                    <a href="#" id="bananas">Бананки</a>
+                </li>
+                <li>
+                    <a href="#" id="bags-belt">Сумки на пояс</a>
+                </li>
+                <li>
+                    <a href="#" id="glasses">Окуляри</a>
+                </li>
+            </ul>
+        </div>
+        <section>
+            <div class="row products-container"></div>
+        </section>
+    </div>
+</main>
 <!--  РЮКЗАКИ ДЛЯ КАТАЛОГУ!!!
 
 
@@ -174,7 +168,6 @@
                             </div>
                         </article>
                         </div></div></div> -->
-
 <!-- ОКУЛЯРИ ДЛЯ КАТАЛОГУ!!!
     <div class="container">
                             <article class="product">
@@ -271,7 +264,6 @@
                                 </div>
                             </article>
                             </div></div></div> -->
-
 <!-- СУМКИ ДЛЯ КАТАЛОГУ!!!
                                 <div class="container-bags">
                                 <article class="product">
@@ -368,7 +360,6 @@
                                     </div>
                                 </article>
                                 </div></div></div> -->
-
 <!-- СУМКИ НА ПОЯС!!!
                                     <div class="container">
                                     <article class="product">
@@ -465,10 +456,8 @@
                                         </div>
                                     </article>
                                     </div></div></div> -->
-
-
 <footer>
-    <div class="contacts">
+    <div class="contacts container">
         <h3>Контакти:</h3>
         <p class="fig">
             <a href="https://instagram.com/sowa_shopp">
@@ -484,12 +473,14 @@
         </p>
         <p class="fig">
             <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380977749829
+
         </p>
         <p class="fig">
             <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380662378740
+
         </p>
     </div>
-    <div class="collaboration">
+    <div class="collaboration container">
         <h3>Співпраця:</h3>
         <p class="fig">
             <a href="https://instagram.com/akuziy">
@@ -505,88 +496,82 @@
         </p>
         <p class="fig">
             <img src="img/icons/icon-telephone.png" alt="Телефон-іконка">+380662378740
+
         </p>
     </div>
 </footer>
-
-
-
-
-
-
-
-    <!-- Modal Cart -->
-    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="cartLabel">Корзина</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartLabel">Корзина</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="cart-product-list-container"></div>
-                  <hr>
-                  <div class="container">
-                    <form>
-                      <div class="form-group row">
-                        <label for="client-name" class="col-4 col-form-label">Ім'я:</label>
-                        <input class="form-control col-8" type="text" id="client-name" required>
-                      </div>
-                      <div class="form-group row">
-                        <label for="client-email" class="col-4 col-form-label">Емайл:</label>
-                        <input class="form-control col-8" type="email" id="client-email" required>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
-                  <button class="btn btn-primary order">Замовити</button>
-                </div>
-              </div>
+                </button>
             </div>
-          </div>
-
-
-
-
-
-
-
-            <div class="overlay">
+            <div class="modal-body">
+                <div class="cart-product-list-container"></div>
+                <hr>
+                <div class="container">
                     <form>
-                       <div class="con">
-                       <header class="head-form">
-                            <button id="close">X</button>
-                          <h2>Увійти</h2>
-                          <p>Введіть сюди свій емайл і пароль</p>
-                       </header>
-                       <br>
-                       <div class="field-set">
-                             <input class="form-input" id="txt-input" type="text" placeholder="емайл" required>
-                          <br>
-                          <input class="form-input" type="password" placeholder="пароль" id="pwd"  name="password" required>
-                          <br>
-                          <button class="log-in"> Увійти </button>
-                       </div>
-                       <div class="other">
-                          <button class="btn submits frgt-pass">Забули пароль</button>
-                          <button class="btn submits sign-up">Зареєструватись
-                          <i class="fa fa-user-plus" aria-hidden="true"></i>
-                          </button>
-                       </div>
-                      </div>
+                        <div class="form-group row">
+                            <label for="client-name" class="col-4 col-form-label">Ім'я:</label>
+                            <input class="form-control col-8" type="text" id="client-name" required>
+                        </div>
+                        <div class="form-group row">
+                            <label for="client-email" class="col-4 col-form-label">Емайл:</label>
+                            <input class="form-control col-8" type="email" id="client-email" required>
+                        </div>
                     </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                <button class="btn btn-primary order">Замовити</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only"></span>
+                </button>
+            </div>
+            <div class="modal-body con">
+                <form>
+                    <header class="head-form">
+                        <h2>Увійти</h2>
+                        <p>Введіть сюди свій емайл і пароль</p>
+                    </header>
+                    <br>
+                    <div class="field-set">
+                        <input class="form-input" id="txt-input" type="text" placeholder="емайл" required>
+                        <br>
+                        <input class="form-input" type="password" placeholder="пароль" id="pwd" name="password" required>
+                        <br>
+                        <button class="log-in">Увійти </button>
                     </div>
-                    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-                    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-
-                    <script defer src="js/cart.js"></script>
-                    <script defer src="js/product-list.js"></script>
-                    <script defer src="js/alert-window.js"></script>
-                    <script defer src="js/index.js"></script>
+                    <div class="other">
+                        <button class="btn submits frgt-pass">Забули пароль</button>
+                        <button class="btn submits sign-up">
+                            Зареєструватись
+                                      <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<script defer src="js/cart.js"></script>
+<script defer src="js/product-list.js"></script>
+<script defer src="js/alert-window.js"></script>
+<script defer src="js/index.js"></script>
 </body></html>

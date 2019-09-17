@@ -52,5 +52,23 @@
         "title": "Бананка сіра із зміїної шкіри",
         "image": "snake-gray-banana.jpg",
         "price": 499.99
+    },
+    {
+        "id": "10",
+        "title": "Cумка на пояс, червона",
+        "image": "red-circle-bags-belt.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "11",
+        "title": "Cумка на пояс, синя",
+        "image": "blue-circle-bags-belt.jpg",
+        "price": 499.99
+    },
+    {
+        "id": "12",
+        "title": "Cумка на пояс, чорна",
+        "image": "black-circle-bags-belt.jpg",
+        "price": 499.99
     }
 ]

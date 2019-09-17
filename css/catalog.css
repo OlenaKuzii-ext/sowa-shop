@@ -2,173 +2,178 @@
     font-family: 'Comfortaa', cursive;
     font-size: 3rem;
     margin: 0;
-  }
-  :root {
+}
+
+:root {
     --main-color: #216e50; font-family: 'Neucha', cursive;
     scroll-behavior: smooth;
-  }
-  .overlay{
-    display: none;
-    position: absolute;
-    z-index: 10;
-    margin-left: 40%;
-    margin-top: -10px;
-  }
-  
-  .overlay form {
-      width: 450px;
-      min-height: 500px;
-      height: auto;
-      border-radius: 5px;
-      margin: 2% auto;
-      box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
-      padding: 2%;
-      background-image: linear-gradient(-225deg, #d6fff7 50%, #e0cede 50%);
-  }
-  .overlay form .con {
-      display: -webkit-flex;
-      display: flex;
-    
-      -webkit-justify-content: space-around;
-      justify-content: space-around;
-    
-      -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-    
-        margin: 0 auto;
-  }
-  
-  .overlay .con header {
-      margin: 2% auto 10% auto;
-      text-align: center;
-  }
-  .overlay .con header h2 {
-      font-size: 250%;
-      font-family: 'Neucha', cursive;
-      color: #3e403f;
-      margin-left: 0px;
-  }
-  .overlay .con header #close {
+}
+
+.modal .modal-content .con form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #d6fff7 50%, #e0cede 50%);
+}
+
+.modal .modal-content .con form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.modal .modal-content .con header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+.modal .modal-content .con header h2 {
+    font-size: 250%;
+    font-family: 'Neucha', cursive;
+    color: #3e403f;
+    margin-left: 0px;
+}
+
+.modal .modal-content .con header #close {
     font-size: 200%;
     margin-left: 100%;
     margin-top: 0%;
     width: 60px;
     height: 40px;
     background: #fff;
-  }
-  
-  .overlay .con header p {letter-spacing: 0.05em;}
-  
-  .overlay input[class="form-input"]{
-      width: 250px;
-      height: 50px;
-    
-      margin-top: 2%;
-      padding: 15px;
-      
-      font-size: 16px;
-      font-family: 'Neucha', cursive;
-      color: #5E6472;
-    
-      outline: none;
-      border: none;
-    
-      border-radius: 0px 5px 5px 0px;
-      transition: 0.2s linear;
-      
-  }
-  .overlay input[id="txt-input"] {width: 250px;}
-  .overlay input:focus {
-      transform: translateX(-2px);
-      border-radius: 5px;
-  }
-  
-  .overlay button {
-      display: inline-block;
-      color: #252537;
-    
-      width: 250px;
-      height: 50px;
-    
-      padding: 0 20px;
-      background: #fff;
-      border-radius: 5px;
-      
-      outline: none;
-      border: none;
-    
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.2s linear;
-      
-      margin: 7% auto;
-      letter-spacing: 0.05em;
-  }
-  .overlay .submits {
-      width: 48%;
-      display: inline-block;
-      margin-left: 2%;
-  }
-  
-  .overlay .frgt-pass {background: transparent;}
-  .overlay .sign-up {background: #50fac1;}
-  
-  .overlay button:hover {
-      transform: translatey(3px);
-      box-shadow: none;
-  }
-  .overlay button:hover {
-      animation: ani9 0.4s ease-in-out infinite alternate;
-  }
-  @keyframes ani9 {
-      0% {
-          transform: translateY(3px);
-      }
-      100% {
-          transform: translateY(5px);
-      }
-  }
-  h2 {
+}
+
+.modal .modal-content .con header p {
+    letter-spacing: 0.05em;
+}
+
+.modal .modal-content .con input[class="form-input"] {
+    width: 250px;
+    height: 50px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Neucha', cursive;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+}
+
+.modal .modal-content .con input[id="txt-input"] {
+    width: 250px;
+}
+
+.modal .modal-content .con input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+.modal .modal-content .con button {
+    display: inline-block;
+    color: #252537;
+    width: 250px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+.modal .modal-content .con .submits {
+    width: 48%;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.modal .modal-content .con .frgt-pass {
+    background: transparent;
+}
+
+.modal .modal-content .con .sign-up {
+    background: #50fac1;
+}
+
+.modal .modal-content .con button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+.modal .modal-content .con button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+h2 {
     position: relative;
     margin-left: 400px;
     font-size: 6rem;
     font-family: 'Neucha', cursive;
-  }
-  body {
+}
+
+body {
     max-width: 980px !important;
     margin: auto;
     background-image: url(../img/fon.png);
-  }
-  
+}
+
 header .search {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-  }
-  header .search nav {
+}
+
+header .search nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  
-  header .search a {
+}
+
+header .search a {
     text-decoration: none;
     color: black;
     font-family: 'Comfortaa', cursive;
-  }
-  header .cap {
+}
+
+header .cap {
     display: flex;
     justify-content: space-between;
-  }
-  footer {
+}
+
+footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
-  }
-  main h3 {
+}
+
+main h3 {
     font-size: 50px;
     text-align: center;
-  }
-  .container-bananas .product {
+}
+
+.container-bananas .product {
     text-decoration: none ;
     outline: none;
     display: inline-block;
@@ -187,27 +192,30 @@ header .search {
     background: #e0d1e0;
     box-shadow: 0 8px 15px rgba(0,0,0,.1);
     transition: .3s;
-  }
-  
-  .container-bananas .product .buy:hover {
+}
+
+.container-bananas .product .buy:hover {
     background: #5bc29a;
     box-shadow: 0 15px 20px rgba(46,229,157,.4);
     color: white;
     transform: translateY(-7px);
-  }
-  p.fig {
+}
+
+p.fig {
     text-align: center;
-  }
-  
-  * {
+}
+
+* {
     box-sizing: border-box;
-  }
-  .search form {
+}
+
+.search form {
     position: relative;
     width: 400px;
     margin: 0 auto;
-  }
-  .search input {
+}
+
+.search input {
     width: 100%;
     height: 42px;
     padding-left: 10px;
@@ -216,8 +224,9 @@ header .search {
     outline: none;
     background: #F9F0DA;
     color: #9E9C9C;
-  }
-  .search button {
+}
+
+.search button {
     position: absolute;
     top: 0;
     right: 0px;
@@ -227,21 +236,24 @@ header .search {
     background: #38c991;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-  }
-  
-  .search button:before {
+}
+
+.search button:before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 16px;
     color: #F9F0DA;
-  }
-  .transfer {
+}
+
+.transfer {
     justify-content: space-between;
-  }
-  nav .fig {
+}
+
+nav .fig {
     display: inline-block;
-  }
-  .main-page a {
+}
+
+.main-page a {
     text-decoration: none;
     outline: none;
     display: inline-block;
@@ -257,26 +269,30 @@ header .search {
     color: white;
     box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
     transition: .5s;
-  }
-  .main-page a:hover {
+}
+
+.main-page a:hover {
     box-shadow: 0 0 0 0 rgba(0,40,120,0);
     background-position: 0 0;
-  }
-  .category {
+}
+
+.category {
     padding: 15px;
     background: #ede2d3;
     width: 200px;
     box-shadow: 2px 2px 8px rgba(0,0,0,.1);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .category h3 {
+}
+
+.category h3 {
     font-size: 16px;
     color: rgba(0,0,0,.6);
     margin: 0 0 10px;
     padding: 0 5px;
     position: relative;
-  }
-  .category h3:after {
+}
+
+.category h3:after {
     content: "";
     width: 6px;
     height: 6px;
@@ -285,20 +301,20 @@ header .search {
     right: 5px;
     bottom: 2px;
     box-shadow: -8px -8px #80C8A0, 0 -8px #80C8A0, -8px 0 #80C8A0;
-  }
-  
-  .category ul {
+}
+
+.category ul {
     list-style: none;
     margin: 0;
     padding: 0;
     border-top: 1px solid rgba(0,0,0,.3);
-  }
-  
-  .category li {
+}
+
+.category li {
     margin: 12px 0 0 0px;
-  }
-  
-  .category a {
+}
+
+.category a {
     text-decoration: none;
     display: block;
     font-size: 18px;
@@ -306,113 +322,134 @@ header .search {
     padding: 5px;
     position: relative;
     transition: .3s linear;
-  }
-  
-  .category a:after {
+}
+
+.category a:after {
     content: "\f18e";
     font-family: FontAwesome;
     position: absolute;
     right: 5px;
     color: #f5d7b0;
     transition: .2s linear;
-  }
-  
-  .category a:hover {
+}
+
+.category a:hover {
     background: #80C8A0;
     color: #f5d7b0;
-  }
-  footer a {
+}
+
+footer a {
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-weight: bold;
-  }
-  .catalog {
+}
+
+.catalog {
     display: grid;
     grid-template-columns: 100px 750px;
     grid-template-rows: 300px 700px;
     grid-gap: 120px;
-  }
-  .main-catalog img{
+}
+
+.main-catalog img {
     width: 95%;
-  }
-  .card-title {
+}
+
+.card-title {
     width: 150px;
     height: 70px;
     font-size: 20px;
-  }
+}
+
 .btn-primary:hover {
-  background: #5bc29a;
-  box-shadow: 0 15px 20px rgba(46,229,157,.4);
-  color: white;
-  transform: translateY(-7px);
+    background: #5bc29a;
+    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    color: white;
+    transform: translateY(-7px);
 }
+
 .btn-primary {
-  text-decoration: none;
-  outline: none;
-  display: inline-block;
-  width: 140px;
-  height: 45px;
-  line-height: 15px;
-  border-radius: 45px;
-  margin-top: 0%;
-  font-family: 'Neucha', cursive;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: #524f4e;
-  background: #e0d1e0;
-  box-shadow: 0 8px 15px rgba(0,0,0,.1);
-  transition: .3s;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 15px;
+    border-radius: 45px;
+    margin-top: 0%;
+    font-family: 'Neucha', cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #524f4e;
+    background: #e0d1e0;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
 }
+
 #carouselOffers {
-  height: 500px;
+    height: 500px;
 }
 
 #carouselOffers img {
-  max-height: 450px;
+    max-height: 450px;
 }
 
 .intro {
-  max-width: 400px;
-  margin-top: 150px;
-  text-align: center;
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
 }
+
 .card {
-  height: 100%;
+    height: 100%;
 }
 
 .alert {
-  position: fixed;
-  top: 50px; 
-  width: 50%;
-  left: 25%;
-  z-index: 1051;
+    position: fixed;
+    top: 50px;
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
 }
 
 .btn {
-  padding: 0.75rem 0.7rem;
+    padding: 0.75rem 0.7rem;
 }
+
 .card {
-  background-image: url(../img/fon.png);
-  border: 0;
+    background-image: url(../img/fon.png);
+    border: 0;
 }
+
 .col-5 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
 }
+
 .col-2 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
 }
+
 .col-3 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
 }
+
 .modal-content {
-  background-image: url(../img/fon.png);
+    background-image: url(../img/fon.png);
 }
+
 .form-control {
-  background-image: url(../img/fon.png);
+    background-image: url(../img/fon.png);
+}
+
+.fig button {
+    position: inherit;
+    background: none;
+    font-size: 18px;
+    font-family: 'Neucha', cursive;
 }
